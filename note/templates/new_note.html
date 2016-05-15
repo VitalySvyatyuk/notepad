@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Новая заметка</h1>
-<form action="home.html" method="post">
-<input type="text" name="note_name">
-    <input>
+<form action="/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" class="button" value="Добавить">
+    {% if note_name and note_text %}
+
 </form>
 {% endblock %}

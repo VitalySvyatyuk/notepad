@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Note
+from .forms import NoteForm
 
 # Create your views here.
 def home(request):
@@ -11,11 +12,9 @@ def home(request):
     return render(request, 'home.html', context)
 
 def new(request):
-    name = "Jefrey"
-    text = "Sometext"
+    form = NoteForm
     context = {
-        'name': name,
-        'text': text,
+        'form': form
     }
     return render(request, 'new_note.html', context)
 
