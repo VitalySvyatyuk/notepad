@@ -10,7 +10,7 @@ def home(request):
     }
     return render(request, 'home.html', context)
 
-def new_note(request):
+def new(request):
     name = "Jefrey"
     text = "Sometext"
     context = {
