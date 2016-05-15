@@ -19,4 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', 'note.views.home'),
+    url(r'^new/$', 'note.views.new_note'),
+    url(r'^note/(?P<note_id>\d+)/$', 'note.views.note'),
 ]
