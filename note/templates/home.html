@@ -2,7 +2,7 @@
 {% block content %}
 <h1>Заметки</h1>
 <div>
-<a href="/new">Добавить заметку</a>
+<a href="/new" class="btn btn-default" role="button">Добавить заметку</a>
     {% for note in notes %}
         <hr>
         <h6>Дата публикации: {{ note.note_date }}</h6>

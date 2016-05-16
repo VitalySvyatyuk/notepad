@@ -20,6 +20,7 @@ def new(request):
             context = {
                 'form': form
             }
+            print form, type(form)
             return render(request, 'new_note.html', context)
     form = NoteForm
     context = {
