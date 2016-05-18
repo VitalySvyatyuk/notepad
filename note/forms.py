@@ -19,5 +19,5 @@ class NoteForm(ModelForm):
     def clean_note_text(self):
         note_text = self.cleaned_data.get('note_text')
         if note_text == '':
-            raise forms.ValidationError("Пожалуйста введите текст заметки")
+            raise forms.ValidationError("Введите текст заметки")
         return note_text

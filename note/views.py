@@ -1,6 +1,8 @@
+from django.contrib import messages
+from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from .models import Note
-from .forms import NoteForm
+import forms
 import datetime
 
 # Create your views here.
@@ -12,8 +14,17 @@ def home(request):
 
 def new(request):
     if request.POST:
-        form = NoteForm(request.POST)
+        form = forms.NoteForm(request.POST)
         if form.is_valid():
+            send_mail(
+                'Note from {}'.format(form.cleaned_data['note_name']),
+                form.cleaned_data['note_text'],
+                'genrich <genrich_sabakevich@mail.ru>',
+                #EXAMPLE: '{name} <{email}>'.format(**form.cleaned_data),
+                ['goodgame1945@gmail.com']
+            )
+            messages.add_message(request, messages.SUCCESS, 'Email is sent.')
+
             form.save()
             return redirect('/')
         else:
@@ -22,7 +33,7 @@ def new(request):
             }
             print form, type(form)
             return render(request, 'new_note.html', context)
-    form = NoteForm
+    form = forms.NoteForm
     context = {
         'form': form
     }
