@@ -3,7 +3,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from .models import Note
 import forms
-import datetime
+
 
 # Create your views here.
 def home(request):
