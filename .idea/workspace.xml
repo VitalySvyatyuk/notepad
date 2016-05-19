@@ -4,7 +4,7 @@
     <list default="true" id="73146078-d875-440a-a442-ac901a889333" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notepad/settings.py" afterPath="$PROJECT_DIR$/notepad/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notepad/wsgi.py" afterPath="$PROJECT_DIR$/notepad/wsgi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/procfile" afterPath="$PROJECT_DIR$/procfile" />
     </list>
     <ignored path="notepad.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/notepad/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="128" column="66" selection-start-line="128" selection-start-column="66" selection-end-line="128" selection-end-column="66" />
+              <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -127,8 +127,8 @@
       <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notepad/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36385256">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.30321047">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#223#232#0" expanded="true" />
               </folding>
@@ -893,7 +893,7 @@
     <entry file="file://$PROJECT_DIR$/notepad/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="128" column="66" selection-start-line="128" selection-start-column="66" selection-end-line="128" selection-end-column="66" />
+          <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
           <folding>
             <element signature="e#308#317#0" expanded="true" />
           </folding>
@@ -902,8 +902,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notepad/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36385256">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.30321047">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#223#232#0" expanded="true" />
           </folding>
