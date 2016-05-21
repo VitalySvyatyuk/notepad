@@ -140,6 +140,7 @@ DEBUG_TOOLBAR_CONFIG = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'notepado')
 
 db_from_env = dj_database_url.config(conn_max_age=500)
