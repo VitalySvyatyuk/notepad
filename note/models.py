@@ -11,3 +11,4 @@ class Note(models.Model):
     note_name = models.CharField(max_length=200, blank=True)
     note_text = models.CharField(max_length=2000, blank=True)
     note_date = models.DateTimeField(default=datetime.datetime.now())
+
