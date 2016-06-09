@@ -15,7 +15,7 @@ import dj_database_url
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = (os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -135,14 +135,16 @@ USE_TZ = True
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
-#print "~~~~~~THIS IS A STATIC ROOT~~~~~~ : ", STATIC_ROOT
+print "~~~~~~THIS IS A STATIC ROOT~~~~~~ : ", STATIC_ROOT
+print "~~~~~~THIS IS A PROJECT ROOT~~~~~~ : ", PROJECT_ROOT
+print "~~~~~~THIS IS A BASE DIR~~~~~~ : ", BASE_DIR
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-#STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, 'static'),
-#]
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_ROOT, 'static'),
+]
 
 
 DEBUG_TOOLBAR_CONFIG = {
